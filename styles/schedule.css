@@ -1,0 +1,130 @@
+.schedule__day {
+    color: var(--preto-fonte);
+    font-weight: 700;
+    font-size: 1em;
+    padding: 1em 0 1em 1em;
+}
+
+.schedule-card__container {
+    display: flex;
+    flex-direction: column; /* Cards empilhados */
+    gap: 1em; /* Espaçamento entre os cards */
+    padding: 1em; /* Espaçamento interno */
+  }
+
+.schedule__card {
+    background: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 1em;
+    margin-bottom: 1em;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.625rem;
+}
+
+.card-header div {
+    flex: 1;
+}
+
+.schedule__pacient {
+    font-weight: 700;
+}
+
+.card-header span {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--cinza-fonte);
+    padding-top: .5em;
+}
+
+.camera-icon {
+    width: 1.6em;
+    height: 1.6em;
+    margin-right: .5em;
+}
+
+hr {
+    background-color: var(--preto-fonte);
+    opacity: 10%;
+}
+
+.schedule__hour {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--preto-fonte);
+    padding-left: 1em;
+}
+
+.card-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.button-video {
+    width: 45%;
+    border: none;
+    border-radius: 8px;
+    padding: 0.625rem 1rem;
+    font-family: var(--fonte);
+    font-weight: 500;
+    background: var(--laranja);
+    color: var(--branco);
+    cursor: pointer;
+}
+  
+.button-audio {
+    width: 45%;
+    border: 1px solid var(--cinza-fundo);
+    border-radius: 8px;
+    padding: 0.625rem 1rem;
+    font-family: var(--fonte);
+    font-weight: 500;
+    background: var(--branco);
+    color: var(--preto-fonte);
+    cursor: pointer;
+}
+
+.button-localization {
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: var(--fonte);
+    font-weight: 500;
+    background: var(--azul);
+    color: var(--branco);
+    cursor: pointer;   
+}
+
+@media screen and (min-width: 768px) {
+    .schedule-card__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .schedule__card {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .schedule__card {
+        width: 30%;
+    }
+}

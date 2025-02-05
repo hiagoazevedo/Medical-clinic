@@ -1,0 +1,112 @@
+.container__flex {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.form__container {
+  display: none;
+  text-align: center;
+  max-width: 60vw;
+  width: 100%;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  background-color: var(--branco);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .2);
+}
+
+.form__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.375rem;
+  margin-bottom: 1em;
+}
+
+.form__flex {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form__data {
+  flex: 1; /* Faz os campos ocuparem a mesma largura */
+}
+
+.form__data label {
+  display: block;
+  font-size: 1rem;
+  color: var(--preto-fonte);
+  margin-bottom: .3rem;
+}
+
+.form__data input,
+select, 
+textarea {
+  width: 100%;
+  padding: .5em;
+  font-size: 1em;
+  color: var(--cinza-fonte);
+  background-color: var(--branco);
+  border: 1px solid var(--preto-fonte);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form__data input:focus,
+.form__data select:focus,
+textarea:focus {
+  border-color: var(--azul); /* Cor azul ao focar no campo */
+  outline: none;
+  background-color: var(--branco); /* Fundo branco */
+}
+
+.form__button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form__button {
+  padding: .7em 1.5em;
+  border: none;
+  border-radius: 16px;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-family: var(--fonte);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form__button[type="submit"] {
+  background-color: var(--azul); /* Azul primário */
+  color: var(--branco); /* Texto branco */
+}
+
+.form__button[type="submit"]:hover {
+  background-color: var(--azul-hover-escuro); /* Azul mais escuro */
+}
+
+.form__button[type="reset"] {
+  background-color: var(--cinza-fundo); /* Cinza claro */
+  color: var(--preto-fonte); /* Texto preto */
+}
+
+.form__button[type="reset"]:hover {
+  background-color: #ddd; /* Cinza mais escuro */
+}
+
+textarea {
+  resize: none; /* Impede a redimensionação manual */
+  min-height: 80px; /* Altura mínima */
+}
+
+@media screen and (min-width: 1024px) {
+  .form__container {
+    display: block;
+  }
+}

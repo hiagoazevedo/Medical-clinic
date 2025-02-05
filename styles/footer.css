@@ -1,0 +1,229 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--branco);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 0.625rem 0;
+  margin-top: 10px;
+  z-index: 10;
+}
+
+.footer nav{
+  width: 100%;
+}
+
+.footer__container {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  color: var(--preto-fonte);
+  font-size: 0.75rem;
+}
+
+.footer__link span {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.consults-icon {
+  background-image: url('../assets/Calendarioicone.svg');
+}
+
+.clients-icon {
+  opacity: 30%;
+  background-image: url('../assets/clientes\ icone.svg');
+}
+
+.report-icon {
+  opacity: 30%;
+  background-image: url('../assets/relatorios\ icone.svg');
+}
+
+.menu-icon {
+  opacity: 30%;
+  background-image: url('../assets/menu\ icone.svg');
+}
+
+/*Botão flutuante*/
+
+.botao__flutuante{
+  position: fixed;
+  right: 1rem;
+  bottom: 5.375rem; /* Ajuste conforme necessário para ficar acima do footer */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.botao__flutuante .botao__flutuante-cadastro{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  filter: drop-shadow(0 3px 6px #4894FF90);
+}
+
+.botao__flutuante .botao__flutuante-cadastro:hover {
+  background-color: #0056b3; /* Uma tonalidade mais escura do azul */
+  transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+  transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+button.botao__flutuante-cadastro span{
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('../assets/maisicone.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn-primario{
+  border: none;
+  background: var(--azul);
+  color: var(--branco);
+}
+
+/* Fundo escuro */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  z-index: 999; /* Abaixo do menu flutuante */
+  display: none; /* Inicialmente escondido */
+}
+
+/* Lista de opções do botão flutuante */
+.botao__flutuante-opcoes {
+  position: absolute;
+  bottom: 4.5rem; /* Logo acima do botão principal */
+  right: .3em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* Inicialmente escondido */
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Estilo de cada botão adicional */
+.botao__flutuante-opcoes li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.botao__flutuante-opcoes span {
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--preto-fonte);
+  background: var(--branco); /* Fundo azul */
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+
+.botao__flutuante-item {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--azul);
+  color: var(--branco);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efeito hover nos botões adicionais */
+.botao__flutuante-item:hover {
+  background: var(--azul-hover-escuro); /* Azul mais escuro */
+  transform: scale(1.1); /* Leve aumento */
+}
+
+/* Botões adicionais com imagens de fundo */
+.botao__flutuante-item.local {
+  background-image: url('../assets/pinfabiconee.svg'); 
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+.botao__flutuante-item.remoto {
+  background-image: url('../assets/Camerafab.svg'); 
+  background-size: 50%; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    position: fixed;
+    top: 0;
+    left: 0; /*Os comandos fixed, juntos com o top e left fazem o menu ficar fixo no canto esquerdo*/
+    width: 12vw; /* Largura do menu lateral */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    width: 100%;
+    gap: 1em; /* Espaçamento entre os itens */
+  }
+
+  .footer__link {
+    width: 100%;
+  }
+
+  .footer__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: .5em 1em;
+    width: 10vw;
+    transition: all 0.3s ease;
+  }
+
+  .footer__link:hover {
+    background-color: var(--cinza-hover);
+    color: var(--azul-hover);
+    border-radius: 8px;
+  }
+
+  .consults-icon, 
+  .clients-icon, 
+  .report-icon, 
+  .menu-icon {
+    margin-right: 0.625rem;
+  }
+  
+  .botao__flutuante {
+    display: none;
+  }
+}

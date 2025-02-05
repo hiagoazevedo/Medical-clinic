@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body>
+  <main>
+    <header class="header">
+      <div id="clock"></div>
+      <div class="header__icons">
+        <img src="assets/signal_cellular_4_bar.svg" alt="Icone de sinal de celular">
+        <img src="assets/battery_full.svg" alt="Icone de bateria">
+        <img src="assets/wifi.svg" alt="Icone de wifi">
+      </div>
+    </header>
+    <section class="banner">
+      <img src="assets/Ellipse 4.svg" alt="Foto da médica responsável">
+      <div>
+        <h1 class="banner__title">Olá, Sônia</h1>
+        <p class="banner__info">Mais 4 consultas hoje</p>
+      </div>
+    </section>
+
+    <section class="schedule">  
+      <div>
+        <h2 class="schedule__day">Hoje</h2>
+      </div>
+      <div class="schedule-card__container">
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 119.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Luciana Dias</h2>
+              <span><img src="assets/Camera.svg" alt="Icone de videochamada" class="camera-icon">Consulta remota</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">14:00 - 15:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-video">Ligar por vídeo</button>
+              <button class="button-audio">Ligar por áudio</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 118.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Larissa Santana</h2>
+              <span><img src="assets/pin.svg" alt="Icone de localização" class="camera-icon">Consulta no local</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">16:00 - 17:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-localization">Ver endereço</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 120.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Marcos Correia</h2>
+              <span><img src="assets/Camera.svg" alt="Icone de videochamada" class="camera-icon">Consulta remota</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">17:20 - 18:00 (40 minutos)</p>
+            <div class="card-buttons">
+              <button class="button-video">Ligar por vídeo</button>
+              <button class="button-audio">Ligar por áudio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="schedule__day">Amanhã</h2>
+      </div>
+
+      <div class="schedule-card__container">
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 121.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Clara Lemos</h2>
+              <span><img src="assets/pin.svg" alt="Icone de localização" class="camera-icon">Consulta no local</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">18:00 - 19:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-localization">Ver endereço</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 119.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Luciana Dias</h2>
+              <span><img src="assets/Camera.svg" alt="Icone de videochamada" class="camera-icon">Consulta remota</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">14:00 - 15:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-video">Ligar por vídeo</button>
+              <button class="button-audio">Ligar por áudio</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 120.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Marcos Correia</h2>
+              <span><img src="assets/Camera.svg" alt="Icone de videochamada" class="camera-icon">Consulta remota</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">17:20 - 18:00 (40 minutos)</p>
+            <div class="card-buttons">
+              <button class="button-video">Ligar por vídeo</button>
+              <button class="button-audio">Ligar por áudio</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 118.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Larissa Santana</h2>
+              <span><img src="assets/pin.svg" alt="Icone de localização" class="camera-icon">Consulta no local</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">16:00 - 17:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-localization">Ver endereço</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h2 class="schedule__day">Quarta-feira</h2>
+      </div>
+
+      <div class="schedule-card__container">
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 121.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Clara Lemos</h2>
+              <span><img src="assets/pin.svg" alt="Icone de localização" class="camera-icon">Consulta no local</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">18:00 - 19:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-localization">Ver endereço</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 119.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Luciana Dias</h2>
+              <span><img src="assets/Camera.svg" alt="Icone de videochamada" class="camera-icon">Consulta remota</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">14:00 - 15:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-video">Ligar por vídeo</button>
+              <button class="button-audio">Ligar por áudio</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 120.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Marcos Correia</h2>
+              <span><img src="assets/Camera.svg" alt="Icone de videochamada" class="camera-icon">Consulta remota</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">17:20 - 18:00 (40 minutos)</p>
+            <div class="card-buttons">
+              <button class="button-video">Ligar por vídeo</button>
+              <button class="button-audio">Ligar por áudio</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="schedule__card">
+          <div class="card-header">
+            <img src="assets/Rectangle 118.svg" alt="Icone da paciente" class="avatar">
+            <div>
+              <h2 class="schedule__pacient">Larissa Santana</h2>
+              <span><img src="assets/pin.svg" alt="Icone de localização" class="camera-icon">Consulta no local</span>
+            </div>
+            <img src="assets/chat1.svg" alt="Icone de chat" class="chat-icon">
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="schedule__hour">16:00 - 17:00 (1 hora)</p>
+            <div class="card-buttons">
+              <button class="button-localization">Ver endereço</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container__flex">
+      <div class="form__container">
+        <form class="form">
+          <h2 class="form__title">Formulário de Agendamento</h2>
+          <div class="form__flex"> 
+            <div class="form__data">
+              <label for="name">Nome do paciente:</label>
+              <input type="text" id="name" name="nome-paciente" required>
+            </div>
+            <div class="form__data">
+              <label for="type__consult">Tipo de consulta:</label>
+              <select id="type__consult" name="tipo-consulta" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Remota</option>
+                <option>Local</option>
+              </select>
+            </div>
+          </div>
+            
+          <div class="form__flex">
+            <div class="form__data">
+              <label for="date__consult">Data da consulta:</label>
+              <input type="date" id="date__consult" name="data-consulta" required>
+            </div>
+            <div class="form__data">
+              <label for="hour__consult">Horário:</label>
+              <input type="time" id="hour__consult" name="horário-consulta" required>
+            </div>
+          </div>
+          <div class="form__flex">
+            <div class="form__data"> 
+              <label for="observations">Observações:</label>
+              <textarea id="observations" name="observações" cols="30" rows="4"></textarea>
+            </div>
+          </div>  
+          <div class="form__button-container">
+            <input type="submit" class="form__button" value="Agendar">
+            <input type="reset" class="form__button" value="Resetar">
+          </div>   
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <ul class="footer__container">
+        <li class="footer__link">
+          <a href="#consultas" class="footer__link">
+          <span class="consults-icon"></span>
+          Consultas
+          </a>
+        </li>
+
+        <li class="footer__link">
+          <a href="#consultas" class="footer__link">
+          <span class="clients-icon"></span>
+          Clientes
+          </a>
+        </li>
+
+        <li class="footer__link">
+          <a href="#consultas" class="footer__link">
+          <span class="report-icon"></span>
+          Relatórios
+          </a>
+        </li>
+
+        <li class="footer__link">
+          <a href="#consultas" class="footer__link">
+          <span class="menu-icon"></span>
+          Menu
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+<div class="botao__flutuante">
+
+  <button class="botao__flutuante-cadastro btn-primario">
+    <span></span>
+  </button>
+  <ul class="botao__flutuante-opcoes">
+
+    <li>
+      <span>Nova consulta na casa do cliente</span>
+      <button class="botao__flutuante-item btn-primario local"></button>
+    </li>
+    <li>
+      <span>Nova consulta por vídeo</span>
+      <button class="botao__flutuante-item btn-primario remoto"></button>
+    </li>
+
+  </ul>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
