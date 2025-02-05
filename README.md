@@ -60,8 +60,8 @@ Este projeto é disponibilizado para fins educacionais sob as seguintes condiç�
 
 1. Você pode visualizar, copiar e modificar este código para seu aprendizado pessoal.
 2. Não é permitido o uso comercial deste código.
-3. Se você usar ou se basear neste código para um projeto, por favor, dê crédito ao autor original.
-4. O autor não oferece garantias e não pode ser responsabilizado por quaisquer problemas decorrentes do uso deste código.
+3. O autor não oferece garantias e não pode ser responsabilizado por quaisquer problemas decorrentes do uso deste código.
+
 ## Contato
 
 Hiago Azevedo - [GitHub](https://github.com/hiagoazevedo)
