@@ -53,10 +53,15 @@ Como desenvolvedor iniciante, estou muito aberto a contribuições, sugestões e
 5. **Documentação**: Melhorias na documentação, comentários no código ou neste README são sempre úteis.
 
 Toda contribuição, não importa o tamanho, é valiosa e muito apreciada.
+
 ## Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto é disponibilizado para fins educacionais sob as seguintes condições:
 
+1. Você pode visualizar, copiar e modificar este código para seu aprendizado pessoal.
+2. Não é permitido o uso comercial deste código.
+3. Se você usar ou se basear neste código para um projeto, por favor, dê crédito ao autor original.
+4. O autor não oferece garantias e não pode ser responsabilizado por quaisquer problemas decorrentes do uso deste código.
 ## Contato
 
 Hiago Azevedo - [GitHub](https://github.com/hiagoazevedo)
